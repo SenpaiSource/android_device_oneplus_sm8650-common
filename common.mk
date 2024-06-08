@@ -332,6 +332,8 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service.lineage-libperfmgr \
     libqti-perfd-client
 
+$(call soong_config_set,power_libperfmgr,mode_extension_lib,//$(LOCAL_PATH):libperfmgr-ext-oplus-sm8650)
+
 # Performance
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/powerhint_pineapple.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint_pineapple.json \
