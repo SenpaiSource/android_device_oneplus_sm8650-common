@@ -4,6 +4,10 @@
 //
 
 soong_namespace {
+    imports: [
+        "hardware/oplus",
+        "vendor/oneplus/sm8650-common",
+    ],
 }
 
 install_symlink {
