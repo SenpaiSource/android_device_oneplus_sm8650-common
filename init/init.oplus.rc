@@ -47,9 +47,6 @@ on post-fs-data
     chown audioserver audio /dev/sipa_tool
     chmod 0666 dev/sipa_tool
 
-on init
-    setprop vendor.powerhal.config powerhint_${ro.boot.product.vendor.sku}.json
-
 on property:ro.boot.prjname=*
     # Display
     setprop ro.separate.soft ${ro.boot.prjname}
