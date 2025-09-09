@@ -291,6 +291,8 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.osense.client-service \
     vendor.oplus.hardware.performance-service
 
+$(call soong_config_set_bool,stagefright,target_disable_thumbnail_block_model,true)
+
 # Overlays
 $(call inherit-product, hardware/oplus/overlay/generic/generic.mk)
 $(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
