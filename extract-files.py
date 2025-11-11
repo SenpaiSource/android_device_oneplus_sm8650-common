@@ -123,6 +123,7 @@ blob_fixups: blob_fixups_user_type = {
         .add_line_if_missing('sched_get_priority_min: 1')
         .add_line_if_missing('sched_get_priority_max: 1'),
     'vendor/etc/sensors/hals.conf': blob_fixup()
+        .regex_replace(r'sensors\.qsh\.so', 'sensors.fusionlight.so')
         .add_line_if_missing('sensors.oplus.so'),
     'vendor/lib64/libqcodec2_core.so': blob_fixup()
         .add_needed('libcodec2_shim.so'),
