@@ -229,6 +229,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.consumerir.xml
+
+$(call inherit-product-if-exists, vendor/oneplus/ir/ir.mk)
 endif
 
 # Kernel
