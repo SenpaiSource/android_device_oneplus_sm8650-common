@@ -64,7 +64,7 @@ QCV_FAMILY_SKUS := pineapple cliffs
 PRODUCT_COPY_FILES += \
 $(foreach DEVICE_SKU, $(QCV_FAMILY_SKUS), \
     $(CONFIG_HAL_SRC_DIR)/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_$(DEVICE_SKU)/audio_effects.conf \
-    $(CONFIG_HAL_SRC_DIR)/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_$(DEVICE_SKU)/audio_effects.xml \
+    $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_$(DEVICE_SKU)/audio_effects.xml \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_$(DEVICE_SKU)/audio_policy_configuration.xml)
 
 PRODUCT_COPY_FILES += \
@@ -143,6 +143,9 @@ PRODUCT_PACKAGES += \
     OplusDoze \
     OplusDozeResCommon
 endif
+
+# Dolby
+$(call inherit-product-if-exists, vendor/sony/dolby/sonydolby.mk)
 
 # DRM
 PRODUCT_PACKAGES += \
