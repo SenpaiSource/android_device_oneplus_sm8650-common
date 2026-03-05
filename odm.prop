@@ -20,4 +20,7 @@ ro.vendor.oplus.radio.project=1
 ro.vendor.oplus.radio.sar_regionmark=FCC
 
 # SVN
-ro.build.version.svn=56
+ro.build.version.svn=54
+
+# Widevine
+vendor.wv.oemcrypto.debug.enable_prov40=true
