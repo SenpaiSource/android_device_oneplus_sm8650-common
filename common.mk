@@ -334,7 +334,8 @@ PRODUCT_PACKAGES += \
 
 # Performance
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/perf/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+    $(LOCAL_PATH)/configs/perf/powerhint_pineapple.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint_pineapple.json \
+    $(LOCAL_PATH)/configs/perf/powerhint_cliffs.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint_cliffs.json
 
 # QSPA
 PRODUCT_PACKAGES += \
