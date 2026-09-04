@@ -19,6 +19,9 @@ subsystem adf
 # Display
 firmware_directories /mnt/vendor/persist/display/
 
+# Haptics
+/dev/awinic_haptic                             0666    system  system
+
 # Memory
 /dev/block/bootdevice/by-name/ddr              0660    root    system
 /dev/block/sdd3                                0660    root    system
