@@ -234,6 +234,9 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product-if-exists, vendor/oneplus/ir/ir.mk)
 endif
 
+# Link to Windows
+$(call inherit-product-if-exists, vendor/oneplus/ltw/ltw.mk)
+
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := true
 
