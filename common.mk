@@ -87,6 +87,7 @@ $(call soong_config_set_bool,android_hardware_audio,skip_speaker_layout_channel_
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl \
+    android.hardware.bluetooth@1.1-service-qti.rc \
     lib_bt_aptx \
     lib_bt_ble \
     lib_bt_bundle

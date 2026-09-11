@@ -1,0 +1,17 @@
+service vendor.bluetooth-1-1-qti /vendor/bin/hw/android.hardware.bluetooth@1.1-service-qti
+    class hal
+    user bluetooth
+    group bluetooth system wakelock oem_2901 net_raw oem_2912
+    capabilities BLOCK_SUSPEND NET_ADMIN SYS_NICE
+    interface android.hardware.bluetooth@1.0::IBluetoothHci default
+    interface android.hardware.bluetooth@1.1::IBluetoothHci default
+    interface com.dsi.ant@1.0::IAnt default
+    interface vendor.qti.hardware.bluetooth_sar@1.0::IBluetoothSar default
+    interface vendor.qti.hardware.bluetooth_sar@1.1::IBluetoothSar default
+    interface vendor.qti.hardware.btconfigstore@1.0::IBTConfigStore default
+    interface vendor.qti.hardware.btconfigstore@2.0::IBTConfigStore default
+    interface vendor.qti.hardware.fm@1.0::IFmHci default
+
+on boot
+    chown bluetooth bluetooth /sys/class/tty/ttyHS0/device/hs_uart_operation
+    chmod 0660 /sys/class/tty/ttyHS0/device/hs_uart_operation

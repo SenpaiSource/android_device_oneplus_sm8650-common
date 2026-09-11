@@ -21,6 +21,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "android.hardware.bluetooth@1.1-service-qti.rc",
+    src: "android.hardware.bluetooth@1.1-service-qti.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.oplus.rc",
     src: "init.oplus.rc",
     sub_dir: "init",
