@@ -153,6 +153,8 @@
         <item>"/vendor/lib64/libipebpsstriping.so"</item>
         <item>"/vendor/lib64/libllvm-glnext.so"</item>
         <item>"/vendor/lib64/libllvm-qcom.so"</item>
+        <item>"/vendor/lib64/libllvm-qgl.so"</item>
+        <item>"/vendor/lib64/libsdmextension.so"</item>
     </string-array>
 
     <!-- Note: This config is deprecated, use config_pinnerCameraPinBytes instead.
