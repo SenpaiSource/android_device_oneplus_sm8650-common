@@ -236,6 +236,9 @@ endif
 # Link to Windows
 $(call inherit-product-if-exists, vendor/oneplus/ltw/ltw.mk)
 
+# Axion Widgets
+$(call inherit-product-if-exists, packages/apps/AxionWidgets/AxionWidgets.mk)
+
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := true
 
