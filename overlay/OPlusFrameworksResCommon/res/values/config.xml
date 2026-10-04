@@ -164,4 +164,10 @@
 
      <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
     <string name="config_oemFastChargerStatusPath" translatable="false">"/sys/class/oplus_chg/battery/fast_charge"</string>
+
+    <!-- Path to battery state of health (SOH) sysfs file (e.g. 96%) -->
+    <string name="config_batterySohPath" translatable="false">/sys/class/oplus_chg/battery/battery_ui_soh</string>
+
+    <!-- Path to battery maximum capacity sysfs file to read real degraded capacity (FCC) -->
+    <string name="config_batteryMaximumCapacityPath" translatable="false">/sys/class/oplus_chg/battery/battery_fcc</string>
 </resources>
