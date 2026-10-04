@@ -13,6 +13,9 @@
     <!-- Max network scan search time in seconds -->
     <integer name="config_network_scan_helper_max_search_time_sec">254</integer>
 
-    <!-- Show battery cycle count -->
+    <!-- Battery info -->
     <bool name="config_show_battery_cycle_count" translatable="false">true</bool>
+    <bool name="config_show_battery_maximum_capacity" translatable="false">true</bool>
+    <bool name="config_show_battery_design_capacity" translatable="false">true</bool>
+    <string name="config_battery_cycle_count_node" translatable="false">/sys/class/oplus_chg/battery/battery_cc</string>
 </resources>
