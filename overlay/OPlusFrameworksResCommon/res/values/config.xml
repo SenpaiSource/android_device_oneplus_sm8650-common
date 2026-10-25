@@ -163,7 +163,13 @@
     <bool name="config_hasVoocCharger">true</bool>
 
      <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
-    <string name="config_oemFastChargerStatusPath" translatable="false">"/sys/class/oplus_chg/battery/fast_charge"</string>
+    <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/oplus_chg/battery/fast_charge</string>
+
+    <!-- Path to fast charging adapter power sysfs file to read adapter wattage (e.g. 33W, 100W) -->
+    <string name="config_oemFastChargerPowerPath" translatable="false">/sys/class/oplus_chg/common/adapter_power</string>
+
+    <!-- Path to fast charging technology sysfs file (1: VOOC, 2/3: SuperVOOC) -->
+    <string name="config_oemFastChargerTechPath" translatable="false">/sys/class/oplus_chg/battery/charge_technology</string>
 
     <!-- Path to battery state of health (SOH) sysfs file (e.g. 96%) -->
     <string name="config_batterySohPath" translatable="false">/sys/class/oplus_chg/battery/battery_soh</string>
