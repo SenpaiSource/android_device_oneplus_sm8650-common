@@ -4,9 +4,6 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
-    <!-- Doze: does the long press sensor need a proximity check? -->
-    <bool name="doze_long_press_proximity_check">true</bool>
-
     <!-- Package name of the system service that implements the shared connectivity service -->
     <string translatable="false" name="config_sharedConnectivityServicePackage"></string>
 
