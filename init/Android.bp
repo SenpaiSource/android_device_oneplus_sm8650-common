@@ -28,6 +28,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "vendor.qti.cdsprpc-service.rc",
+    src: "vendor.qti.cdsprpc-service.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.oplus.rc",
     src: "init.oplus.rc",
     sub_dir: "init",
