@@ -141,6 +141,7 @@ subsystem mem_buf_vm
 
 /dev/radio0               0640   system     system
 /dev/rfcomm0              0660   bluetooth  bluetooth
+/dev/ttyHS0               0660   bluetooth  net_bt
 /dev/ttyUSB0              0660   bluetooth  bluetooth
 /dev/smdcntl0             0640   radio      radio
 /dev/smdcntl1             0640   radio      radio
