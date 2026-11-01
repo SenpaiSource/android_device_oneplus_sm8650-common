@@ -53,4 +53,10 @@
     <!-- Doze: should the TYPE_PICK_UP_GESTURE sensor be used as a pulse signal. -->
     <bool name="config_dozePulsePickup">true</bool>
 
+    <!-- Package name of the system service that implements the shared connectivity service -->
+    <string translatable="false" name="config_sharedConnectivityServicePackage"></string>
+
+    <!-- Intent action used when binding to the shared connectivity service -->
+    <string translatable="false" name="config_sharedConnectivityServiceIntentAction"></string>
+
 </resources>
