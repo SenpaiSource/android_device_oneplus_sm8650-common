@@ -12,6 +12,7 @@ service vendor.bluetooth-1-1-qti /vendor/bin/hw/android.hardware.bluetooth@1.1-s
     interface vendor.qti.hardware.btconfigstore@2.0::IBTConfigStore default
     interface vendor.qti.hardware.fm@1.0::IFmHci default
 
-on boot
+on early-boot
     chown bluetooth bluetooth /sys/class/tty/ttyHS0/device/hs_uart_operation
     chmod 0660 /sys/class/tty/ttyHS0/device/hs_uart_operation
+    start vendor.bluetooth-1-1-qti
