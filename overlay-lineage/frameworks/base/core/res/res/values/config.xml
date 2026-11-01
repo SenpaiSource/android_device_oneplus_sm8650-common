@@ -6,4 +6,10 @@
 <resources>
     <!-- Doze: does the long press sensor need a proximity check? -->
     <bool name="doze_long_press_proximity_check">true</bool>
+
+    <!-- Package name of the system service that implements the shared connectivity service -->
+    <string translatable="false" name="config_sharedConnectivityServicePackage"></string>
+
+    <!-- Intent action used when binding to the shared connectivity service -->
+    <string translatable="false" name="config_sharedConnectivityServiceIntentAction"></string>
 </resources>
