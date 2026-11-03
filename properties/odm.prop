@@ -6,6 +6,8 @@ ro.vendor.qti.va_odm.support=1
 sys.oplus_ftm_mode=997
 
 # Radio
+persist.vendor.oplus.rtsar.licenses=1
+persist.vendor.oplus.tddsawless.licenses=1
 persist.vendor.radio.force_on_dc=true
 persist.vendor.radio.mdccbsize=164
 persist.vendor.radio.virtualcomm=1
