@@ -143,6 +143,8 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product-if-exists, vendor/sony/dolby/sonydolby.mk)
 
 # DRM
+PRODUCT_PACKAGES += duck_rkp
+
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
 
