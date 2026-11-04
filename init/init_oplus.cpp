@@ -18,6 +18,7 @@ uint32_t InitPropertySet(const std::string& name, const std::string& value);
 }  // namespace init
 }  // namespace android
 
+using android::base::GetProperty;
 using android::base::ParseInt;
 using android::fs_mgr::GetKernelCmdline;
 using android::init::InitPropertySet;
@@ -85,5 +86,13 @@ void vendor_process_bootenv() {
                 LOG(ERROR) << "Unexpected project ID: " << prj_id;
                 break;
         }
+    }
+}
+
+void vendor_load_properties() {
+    // ro.build.fingerprint is not shipped in system/build.prop; report the stock one.
+    auto fingerprint = GetProperty("ro.vendor.build.fingerprint", "");
+    if (!fingerprint.empty()) {
+        InitPropertySet("ro.build.fingerprint", fingerprint);
     }
 }
