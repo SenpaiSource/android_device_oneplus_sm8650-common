@@ -187,6 +187,7 @@ persist.vendor.dpm.vndr.idletimer.mode=default
 # DRM
 drm.service.enabled=true
 vendor.wv.oemcrypto.debug.enable_hlos_data_path=true
+vendor.wv.oemcrypto.debug.enable_prov40=true
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
