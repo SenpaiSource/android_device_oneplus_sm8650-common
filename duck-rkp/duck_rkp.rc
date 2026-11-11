@@ -2,4 +2,4 @@ service vendor.duck_rkp /vendor/bin/duck_rkp
     class hal
     user system
     group system drmrpc
-    interface aidl vendor.penguin.duckrkp.IDuckRkp/default
+    interface aidl vendor.lunaris.duckrkp.IDuckRkp/default

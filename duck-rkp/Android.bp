@@ -8,7 +8,7 @@ cc_binary {
         "libcrypto",
         "libdl",
         "libbinder_ndk",
-        "vendor.penguin.duckrkp-V1-ndk",
+        "vendor.lunaris.duckrkp-V1-ndk",
     ],
     static_libs: ["libcppbor"],
     cflags: ["-Wall", "-Wextra", "-Werror"],
