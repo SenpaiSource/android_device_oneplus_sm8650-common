@@ -4,7 +4,7 @@
  * Copyright (c) 2026 Eltavine (尉迟栩澜)
  */
 #include <arpa/inet.h>
-#include <aidl/vendor/penguin/duckrkp/BnDuckRkp.h>
+#include <aidl/vendor/lunaris/duckrkp/BnDuckRkp.h>
 #include <android/binder_manager.h>
 #include <android/binder_process.h>
 #include <android/binder_ibinder.h>
@@ -283,7 +283,7 @@ std::vector<uint8_t> runWorker(uint32_t backend, const std::vector<uint8_t>& pay
     return response;
 }
 
-class DuckRkp : public aidl::vendor::penguin::duckrkp::BnDuckRkp {
+class DuckRkp : public aidl::vendor::lunaris::duckrkp::BnDuckRkp {
     ndk::ScopedAStatus request(int32_t backend, const std::vector<uint8_t>& payload,
                               std::vector<uint8_t>* output) override {
         if (AIBinder_getCallingUid() != 1000) {

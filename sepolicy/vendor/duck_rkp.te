@@ -19,7 +19,7 @@ allow duck_rkp duck_rkp_worker:process { signal sigkill };
 
 allow duck_rkp_worker duck_rkp:fd use;
 allow duck_rkp_worker duck_rkp:unix_stream_socket { read write getattr getopt setopt };
-allow duck_rkp_worker vendor_smcinvoke_device:chr_file rw_file_perms;
+# /dev/smcinvoke is labeled tee_device on this platform
 allow duck_rkp_worker tee_device:chr_file rw_file_perms;
 allow duck_rkp_worker vendor_dmabuf_qseecom_heap_device:chr_file r_file_perms;
 r_dir_file(duck_rkp_worker, vendor_file)
