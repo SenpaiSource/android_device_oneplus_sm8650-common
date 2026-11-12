@@ -135,6 +135,8 @@ blob_fixups: blob_fixups_user_type = {
     # can't run. Exposing them as vendor public libraries lets the app namespace resolve them.
     # avalon uses QnnHtpV73Stub (SM7675).
     'vendor/etc/public.libraries.txt': blob_fixup()
+        .add_line_if_missing('libaiboost.so')
+        .add_line_if_missing('libaiboost_llm.so')
         .add_line_if_missing('libarcsoft_hdr_couple_api.so')
         .add_line_if_missing('libarcsoft_high_dynamic_range_couple.so')
         .add_line_if_missing('libarcsoft_smart_denoise.so')
