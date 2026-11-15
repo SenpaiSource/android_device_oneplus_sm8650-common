@@ -62,6 +62,7 @@ blob_fixups: blob_fixups_user_type = {
         'odm/bin/hw/vendor-oplus-hardware-touch-V2-service',
         'odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff',
         'odm/bin/touchDaemon',
+        'vendor/lib64/liblearningmodule.so',
         'vendor/bin/qvrdatauploader',
     ): blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),

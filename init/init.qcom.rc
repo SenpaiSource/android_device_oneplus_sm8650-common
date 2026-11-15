@@ -396,6 +396,14 @@ on post-fs-data
     #Create dir for TUI
     mkdir /data/vendor/tui 0700 system drmrpc
 
+    # Create directory for Learning Module
+    mkdir /data/vendor/lm 0700 root root
+
+    # Create PERFD daemon related dirs
+    mkdir /data/vendor/perfd 0770 root system
+    chmod 2770 /data/vendor/perfd
+    rm /data/vendor/perfd/default_values
+
 service nqnfcinfo /system/vendor/bin/nqnfcinfo
     class late_start
     group nfc
